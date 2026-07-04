@@ -1,85 +1,73 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
+title = "Haotian Wang | 王皓天"
+description = "PhD Student in Land Surveying and Geospatial Science at The Hong Kong Polytechnic University. Research focuses on urban dynamic evolution, human spatiotemporal behaviour, and spatial perception. Exploring human-centered planning and sustainable development using multi-source data and geospatial modeling."
+url = "https://your-website.com"          # 以后部署后改成真实域名
 favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+last_updated = "July 2026"
 
 [author]
-name = "Jiale Liu"
+name = "Haotian Wang"
 title = "PhD Student"
-institution = "University of Example"
-avatar = "/bio.jpg"
+institution = "Department of Land Surveying and Geospatial Science, The Hong Kong Polytechnic University"
+avatar = "/images/avatar.jpg"            # 后面我们再放你的照片
 
 [social]
-# Contact information (leave blank or delete to hide)
-
-email = "john.doe@example.com"
-location = "City, Country"
-location_url = "https://maps.google.com"
+email = "haotian25.wang@connect.polyu.hk"
+location = "Hung Hom, Kowloon, Hong Kong"
+location_url = "https://www.google.com/maps/search/?api=1&query=181+Chatham+Road+South,+Hung+Hom,+Kowloon,+Hong+Kong"
 location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
+  "181 Chatham Road South,",
+  "Hung Hom, Kowloon,",
+  "Hong Kong"
 ]
-google_scholar = "https://scholar.google.com"
-orcid = "https://orcid.org"
-github = "https://github.com"
-linkedin = "https://linkedin.com"
+google_scholar = "https://scholar.google.com/citations?user=y3TKuWgAAAAJ&hl=zh-CN"                       # 填你的 Google Scholar 链接
+orcid = "https://orcid.org/0009-0008-5883-9606"                                # 填你的 ORCID（如果有）
+github = ""                               # 填你的 GitHub（如果有）
+linkedin = ""                             # 填你的 LinkedIn（可选）
 
 [features]
-# Show a like button on the about page
 enable_likes = true
-
-# Display all subpages on a single page
 enable_one_page_mode = false
 
 [i18n]
 enabled = true
-locales = ["zh", "en"]
+locales = ["en", "zh"]
 default_locale = "en"
-# "auto" means the locale will be determined by the browser's language setting, "fixed" means the locale will be fixed to the default locale (but can be switched still, if you want to disable, set "enable=false")
 mode = "auto"
-fixed_locale = "en"
-# If true, PRISM will remember user's language preference in browser's localStorage
 persist = true
-# Show a language switcher on the top right corner
 switcher = true
 
 [i18n.labels]
 zh = "中文"
 en = "English"
 
+# 导航菜单（英文 + 中文）
 [[navigation]]
 title = "About"
+title_zh = "关于我"
 type = "page"
 target = "about"
 href = "/"
 
 [[navigation]]
 title = "Publications"
+title_zh = "学术论文"
 type = "page"
 target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Teaching"
+title = "Conferences"
+title_zh = "会议交流"
 type = "page"
-target = "teaching"
-href = "/teaching"
-
-[[navigation]]
-title = "Awards"
-type = "page"
-target = "awards"
-href = "/awards"
-
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services"
+target = "conferences"
+href = "/conferences"
 
 [[navigation]]
 title = "CV"
+title_zh = "简历"
 type = "page"
 target = "cv"
 href = "/cv"
+
+# 你可以后面再添加 Teaching、Awards 等

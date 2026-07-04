@@ -1,23 +1,27 @@
 type = "about"
 title = "About"
+title_zh = "关于我"
 
 [profile]
 research_interests = [
-  "Computational Physics",
-  "Mathematical Principles",
-  "Proof of Theorems"
-]
+  "Social Sensing",
+  "Human Behaviour",
+  "Urban Dynamics",
+  "GeoAI",
+  "Human-Centered Planning"]
 
 [[sections]]
 id = "about"
 type = "markdown"
 source = "bio.md"
 title = "About"
+title_zh = "关于我"
 
 [[sections]]
 id = "featured_publications"
 type = "publications"
 title = "Selected Publications"
+title_zh = "精选论文"
 filter = "selected"
 limit = 5
 
@@ -25,5 +29,5 @@ limit = 5
 id = "news"
 type = "list"
 title = "News"
+title_zh = "最新动态"
 source = "news.toml"
-

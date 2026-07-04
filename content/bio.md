@@ -1,5 +1,6 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am a PhD student in the Department of Land Surveying and Geospatial Science at The Hong Kong Polytechnic University , under the supervision of [Prof. Xintao Liu](https://geoxlab.github.io/) (Chief Supervisor) and [Prof. You Dong](https://youdongpolyu.weebly.com/) (Co-supervisor).
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+
+My research focuses on social sensing,  human behaviour, urban dynamics from a human-centered perspective. I integrate multi-source big data with neurophysiological observations and GeoAI techniques to explore sustainable urban planning and development pathways that prioritize human well-being in modern cities.
+

@@ -1,4 +1,6 @@
 type = "publication"
-title = "论文"
-description = "我的研究成果列表。"
+title = "学术论文"
+title_en = "Publications"
+description = "我的研究论文集"
+description_en = "A collection of my research work."
 source = "publications.bib"
