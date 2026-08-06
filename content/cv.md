@@ -1,13 +1,13 @@
 ## Education
 
-**The Hong Kong Polytechnic University**, PhD in Geomatics, *2025 - Present*
+**PhD in Geomatics**, *2025 - Present*
 - Research focus: Social Sensing and GeoAI
 - Supervisor: Prof. Xintao Liu and Prof. You Dong
 
-**The Hong Kong Polytechnic University**, MSc in Urban Informatics and Smart Cities, *2023 - 2025*
+**MSc in Urban Informatics and Smart Cities**, *2023 - 2025*
 - Graduated with Distinction
 
-**Shandong Jianzhu University**, BEng in Urban and Rural Planning, *2018 - 2023*
+**BEng in Urban and Rural Planning**, *2018 - 2023*
 - Outstanding Graduate of Shandong Province
 
 ## Skills
