@@ -4,12 +4,6 @@ title_zh = "学术会议"
 description = "Some of my academic communication experiences and memories."
 
 [[items]]
-title = "The 2026 Symposium on Spatiotemporal Data Science"
-subtitle = "Alexandria, USA · 2026.08"
-content = "Visual Oral Presentation"
-type = "conference"
-
-[[items]]
 title = "33rd International Conference on Geoinformatics"
 subtitle = "Singapore · 2026.07"
 content = "Oral Presentation"
