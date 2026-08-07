@@ -15,39 +15,46 @@ title = "2026 American Association of Geographers (AAG) Annual Meeting"
 subtitle = "San Francisco, USA · 2026.03"
 content = "Visual Oral Presentation"
 type = "conference"
+image = "conference/aag.png"
 
 [[items]]
 title = "2025 International Graduate Student Workshop on Geo-Informatics (IGWG)"
 subtitle = "Hong Kong · 2025.12"
 content = "Oral Presentation"
 type = "conference"
+image = "conference/IGWG.jpg"
 
 [[items]]
 title = "2025 China Behavioral Geography and Health Geography Academic Annual Conference"
 subtitle = "Guangzhou, China · 2025.11"
 content = "Oral Presentation"
 type = "conference"
+image = "conference/Behavioral.jpg"
 
 [[items]]
 title = "The 10th National Conference on Virtual Geographic Environment (CVGE 2025)"
 subtitle = "Nanjing, China · 2025.05"
 content = "Oral Presentation"
 type = "conference"
+image = "conference/CVGE.jpg"
 
 [[items]]
 title = "The 2024 ACSP 64th Annual Conference"
 subtitle = "Seattle, USA · 2024.11"
 content = "Finalist Individual Paper Presentation"
 type = "conference"
+image = "conference/ACSP.jpg"
 
 [[items]]
 title = "The 9th Youth Geoscience Forum"
 subtitle = "Xiamen, China · 2024.05"
 content = "Oral Presentation"
 type = "conference"
+image = "conference/Youth.jpg"
 
 [[items]]
 title = "Nexus Forum 2024 on Sustainable Exploration of Interdisciplinary Research and Innovation"
 subtitle = "Hong Kong · 2024.05"
 content = "Best Oral Presentation Award"
 type = "conference"
+image = "conference/Nexus.jpg"

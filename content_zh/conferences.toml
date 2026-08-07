@@ -8,45 +8,53 @@ title = "第33届国际地理信息科学大会"
 subtitle = "新加坡 · 2026.07"
 content = "口头报告"
 type = "conference"
+image = "conference/33rd.jpg"
 
 [[items]]
 title = "2026 美国地理学家协会年会"
 subtitle = "美国旧金山 · 2026.03"
 content = "在线报告"
 type = "conference"
+image = "conference/aag.png"
 
 [[items]]
 title = "2025 国际地理信息科学研究生工作坊"
 subtitle = "香港 · 2025.12"
 content = "口头报告"
 type = "conference"
+image = "conference/IGWG.jpg"
 
 [[items]]
 title = "2025 中国行为地理与健康地理学术年会"
 subtitle = "中国广州 · 2025.11"
 content = "口头报告"
 type = "conference"
+image = "conference/Behavioral.jpg"
 
 [[items]]
 title = "第十届全国虚拟地理环境大会"
 subtitle = "中国南京 · 2025.05"
 content = "口头报告"
 type = "conference"
+image = "conference/CVGE.jpg"
 
 [[items]]
 title = "2024 美国大学规划学院协会第64届年会"
 subtitle = "美国西雅图 · 2024.11"
 content = "入围口头报告"
 type = "conference"
+image = "conference/ACSP.jpg"
 
 [[items]]
 title = "第九届青年地学论坛"
 subtitle = "中国厦门 · 2024.05"
 content = "口头报告"
 type = "conference"
+image = "conference/Youth.jpg"
 
 [[items]]
 title = "2024 Nexus Forum 跨学科研究与创新可持续发展论坛"
 subtitle = "香港 · 2024.05"
 content = "最佳口头报告奖"
 type = "conference"
+image = "conference/Nexus.jpg"
