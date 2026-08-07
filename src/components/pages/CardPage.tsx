@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import Image from 'next/image';
 import { CardPageConfig } from '@/types/page';
 
 const markdownComponents = {
@@ -56,33 +57,62 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                         transition={{ duration: 0.4, delay: 0.1 * index }}
                         className={`bg-white dark:bg-neutral-900 ${embedded ? "p-4" : "p-6"} rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-lg transition-all duration-200 hover:scale-[1.01]`}
                     >
-                        <div className="flex justify-between items-start mb-2">
-                            <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary`}>{item.title}</h3>
-                            {item.date && (
-                                <span className="text-sm text-neutral-500 font-medium bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">
-                                    {item.date}
-                                </span>
+                        <div className="flex flex-col md:flex-row gap-5">
+                            {/* 封面图支持 */}
+                            {item.image && (
+                                <div className="w-full md:w-48 flex-shrink-0">
+                                    <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+                                        <Image
+                                            src={item.image.startsWith('/') ? item.image : `/${item.image}`}
+                                            alt={item.title}
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 768px) 100vw, 200px"
+                                        />
+                                    </div>
+                                </div>
                             )}
+
+                            <div className="flex-grow">
+                                <div className="flex justify-between items-start mb-2">
+                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary`}>
+                                        {item.title}
+                                    </h3>
+                                    {item.date && (
+                                        <span className="text-sm text-neutral-500 font-medium bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded">
+                                            {item.date}
+                                        </span>
+                                    )}
+                                </div>
+
+                                {item.subtitle && (
+                                    <p className={`${embedded ? "text-sm" : "text-base"} text-accent font-medium mb-3`}>
+                                        {item.subtitle}
+                                    </p>
+                                )}
+
+                                {item.content && (
+                                    <div className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
+                                        <ReactMarkdown components={markdownComponents}>
+                                            {item.content}
+                                        </ReactMarkdown>
+                                    </div>
+                                )}
+
+                                {item.tags && (
+                                    <div className="flex flex-wrap gap-2 mt-4">
+                                        {item.tags.map(tag => (
+                                            <span
+                                                key={tag}
+                                                className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
                         </div>
-                        {item.subtitle && (
-                            <p className={`${embedded ? "text-sm" : "text-base"} text-accent font-medium mb-3`}>{item.subtitle}</p>
-                        )}
-                        {item.content && (
-                            <div className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
-                                <ReactMarkdown components={markdownComponents}>
-                                    {item.content}
-                                </ReactMarkdown>
-                            </div>
-                        )}
-                        {item.tags && (
-                            <div className="flex flex-wrap gap-2 mt-4">
-                                {item.tags.map(tag => (
-                                    <span key={tag} className="text-xs text-neutral-500 bg-neutral-50 dark:bg-neutral-800/50 px-2 py-1 rounded border border-neutral-100 dark:border-neutral-800">
-                                        {tag}
-                                    </span>
-                                ))}
-                            </div>
-                        )}
                     </motion.div>
                 ))}
             </div>
