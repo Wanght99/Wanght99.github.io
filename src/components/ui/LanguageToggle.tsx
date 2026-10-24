@@ -26,7 +26,7 @@ export default function LanguageToggle({ i18n }: LanguageToggleProps) {
 
   if (!mounted) {
     return (
-      <div className="flex items-center justify-center w-14 h-10 rounded-lg border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] bg-background dark:bg-neutral-800">
+      <div className="flex items-center justify-center w-10 sm:w-14 h-10 rounded-lg border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] bg-background dark:bg-neutral-800">
         <div className="w-6 h-4 rounded bg-neutral-300 animate-pulse" />
       </div>
     );
@@ -53,7 +53,7 @@ export default function LanguageToggle({ i18n }: LanguageToggleProps) {
         title={currentLabel}
       >
         <LanguageIcon className="h-4 w-4" />
-        <span className="text-xs font-medium">{currentLabel}</span>
+        <span className="hidden sm:inline text-xs font-medium">{currentLabel}</span>
         <ChevronDownIcon className="h-3.5 w-3.5" />
       </motion.button>
 
