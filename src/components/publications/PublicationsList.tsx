@@ -235,7 +235,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </p>
 
                                     {pub.description && (
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
+                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3 text-justify hyphens-auto">
                                             {pub.description}
                                         </p>
                                     )}
@@ -301,7 +301,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 className="overflow-hidden mt-4"
                                             >
                                                 <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
-                                                    <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed">
+                                                    <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed text-justify hyphens-auto">
                                                         {pub.abstract}
                                                     </p>
                                                 </div>

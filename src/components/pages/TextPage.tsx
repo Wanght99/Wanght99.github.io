@@ -24,7 +24,7 @@ export default function TextPage({ config, content, embedded = false }: TextPage
                     {config.description}
                 </p>
             )}
-            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed">
+            <div className="markdown text-neutral-700 dark:text-neutral-600 leading-relaxed">
                 <ReactMarkdown
                     components={{
                         h1: ({ children }) => <h1 className="text-3xl font-serif font-bold text-primary mt-8 mb-4">{children}</h1>,

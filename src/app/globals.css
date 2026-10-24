@@ -185,6 +185,14 @@ body {
   overflow-x: clip;
 }
 
+/* Justified paragraphs for markdown prose (cleaner line breaks) */
+.markdown p {
+  text-align: justify;
+  text-wrap: pretty;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 /* Typography utilities */
 .text-balance {
   text-wrap: balance;
