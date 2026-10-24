@@ -75,7 +75,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
 
                             <div className="flex-grow">
                                 <div className="flex justify-between items-start mb-2">
-                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary`}>
+                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary text-justify`}>
                                         {item.title}
                                     </h3>
                                     {item.date && (
@@ -86,7 +86,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                 </div>
 
                                 {item.subtitle && (
-                                    <p className={`${embedded ? "text-sm" : "text-base"} text-accent font-medium mb-3`}>
+                                    <p className={`${embedded ? "text-sm" : "text-base"} text-accent font-medium mb-3 text-justify`}>
                                         {item.subtitle}
                                     </p>
                                 )}
