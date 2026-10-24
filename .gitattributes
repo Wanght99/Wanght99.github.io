@@ -1,0 +1,5 @@
+# Normalize all text files to LF in the repository and working tree.
+# Critical for this project: CRLF in source files is embedded verbatim into
+# Next.js RSC flight payloads (out/**/index.txt); the resulting malformed
+# rows break client-side navigation on the deployed site.
+* text=auto eol=lf
