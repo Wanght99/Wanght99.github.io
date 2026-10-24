@@ -27,6 +27,18 @@ const OrcidIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
+// Custom ResearchGate icon component
+const ResearchGateIcon = ({ className }: { className?: string }) => (
+    <svg
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M19.586 0c-1.201 0-2.168.969-2.168 2.168 0 1.197.969 2.167 2.168 2.167 1.198 0 2.167-.969 2.167-2.167 0-1.199-.969-2.168-2.167-2.168zm-2.168 5.617v14.878h4.339V5.617h-4.339zM7.807 5.617c-1.199 0-2.168.969-2.168 2.168v5.44c-.66-.429-1.482-.617-2.338-.617-2.171 0-3.969 1.846-3.969 4.015 0 2.166 1.791 4.014 3.969 4.014.849 0 1.662-.203 2.338-.569v.569h4.335V7.785c0-1.199-.969-2.168-2.167-2.168H7.807zm-2.338 9.055c.893 0 1.661.77 1.661 1.662 0 .893-.768 1.661-1.661 1.661-.896 0-1.661-.768-1.661-1.661s.765-1.662 1.661-1.662z" />
+    </svg>
+);
+
 interface ProfileProps {
     author: SiteConfig['author'];
     social: SiteConfig['social'];
@@ -91,6 +103,11 @@ export default function Profile({ author, social, features, researchInterests }:
             name: 'ORCID',
             href: social.orcid,
             icon: OrcidIcon,
+        }] : []),
+        ...(social.researchgate ? [{
+            name: 'ResearchGate',
+            href: social.researchgate,
+            icon: ResearchGateIcon,
         }] : []),
         ...(social.github ? [{
             name: 'GitHub',
