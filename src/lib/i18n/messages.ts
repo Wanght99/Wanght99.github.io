@@ -42,6 +42,16 @@ export interface LocaleMessages {
     bibtex: string;
     code: string;
   };
+  conferences: {
+    details: string;
+    location: string;
+    date: string;
+    organizer: string;
+    coOrganizers: string;
+    supporting: string;
+    presentation: string;
+    eventPage: string;
+  };
   footer: {
     lastUpdated: string;
     builtWithPrism: string;
@@ -92,6 +102,16 @@ const en: LocaleMessages = {
     bibtex: 'BibTeX',
     code: 'Code',
   },
+  conferences: {
+    details: 'Details',
+    location: 'Location',
+    date: 'Date',
+    organizer: 'Organizer',
+    coOrganizers: 'Co-organizers',
+    supporting: 'Supporting organizations',
+    presentation: 'My presentation',
+    eventPage: 'Event page',
+  },
   footer: {
     lastUpdated: 'Last updated',
     builtWithPrism: 'Built with PRISM',
@@ -141,6 +161,16 @@ const zh: LocaleMessages = {
     abstract: '摘要',
     bibtex: 'BibTeX',
     code: '代码',
+  },
+  conferences: {
+    details: '会议详情',
+    location: '地点',
+    date: '时间',
+    organizer: '主办单位',
+    coOrganizers: '承办单位',
+    supporting: '协办/支持单位',
+    presentation: '我的演讲',
+    eventPage: '会议页面',
   },
   footer: {
     lastUpdated: '最近更新',
