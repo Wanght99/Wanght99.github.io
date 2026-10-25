@@ -22,6 +22,7 @@ export interface Publication {
   titleNodes?: BibTeXInlineNode[];
   authors: Author[];
   abstract?: string;
+  abstractImage?: string;
   journal?: string;
   conference?: string;
   volume?: string;

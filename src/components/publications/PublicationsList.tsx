@@ -301,6 +301,16 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 className="overflow-hidden mt-4"
                                             >
                                                 <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
+                                                    {pub.abstractImage && (
+                                                        <Image
+                                                            src={`/papers/${pub.abstractImage}`}
+                                                            alt={`${pub.title} abstract figure`}
+                                                            width={1600}
+                                                            height={1000}
+                                                            className="mb-4 h-auto w-full rounded-lg"
+                                                            sizes="(max-width: 768px) 100vw, 900px"
+                                                        />
+                                                    )}
                                                     <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed sm:text-justify sm:hyphens-auto">
                                                         {pub.abstract}
                                                     </p>
