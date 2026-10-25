@@ -62,9 +62,9 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
 
     // Parse preview field (remove braces if present)
     const preview = tags.preview?.replace(/[{}]/g, '');
-    const abstractImage = entry.citationKey === 'WANG2027115477'
+    const abstractImage = tags.abstractImage?.replace(/[{}]/g, '') || (entry.citationKey === 'WANG2027115477'
       ? 'WANG2027115477-abstract.jpg'
-      : preview?.replace(/(\.[^.]+)$/, '-abstract$1');
+      : preview?.replace(/(\.[^.]+)$/, '-abstract$1'));
     const title = parseBibTeXInline(tags.title || 'Untitled');
 
     // Create publication object
@@ -97,7 +97,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       abstractImage,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'abstractimage', 'description', 'keywords', 'code']),
     };
 
     // Clean up undefined fields
