@@ -214,7 +214,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </div>
                                 )}
                                 <div className="flex-grow">
-                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight text-justify`}>
+                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight sm:text-justify`}>
                                         <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
                                     </h3>
                                     <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
@@ -235,7 +235,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </p>
 
                                     {pub.description && (
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3 text-justify hyphens-auto">
+                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3 sm:text-justify sm:hyphens-auto">
                                             {pub.description}
                                         </p>
                                     )}
@@ -301,7 +301,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 className="overflow-hidden mt-4"
                                             >
                                                 <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
-                                                    <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed text-justify hyphens-auto">
+                                                    <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed sm:text-justify sm:hyphens-auto">
                                                         {pub.abstract}
                                                     </p>
                                                 </div>
