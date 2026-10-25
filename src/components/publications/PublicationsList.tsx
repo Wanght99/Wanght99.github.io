@@ -68,7 +68,7 @@ export default function PublicationsList({ config, publications, embedded = fals
             <div className="mb-8">
                 <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
                 {config.description && (
-                    <p className={`${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 max-w-2xl`}>
+                    <p className={`prose-justify ${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 max-w-2xl`}>
                         {config.description}
                     </p>
                 )}
@@ -197,9 +197,9 @@ export default function PublicationsList({ config, publications, embedded = fals
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4, delay: 0.1 * index }}
-                            className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
+                            className="bg-white dark:bg-neutral-900 p-4 sm:p-6 rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-md transition-all duration-200"
                         >
-                            <div className="flex flex-col md:flex-row gap-6">
+                            <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
                                 {pub.preview && (
                                     <div className="w-full md:w-48 flex-shrink-0">
                                         <div className="aspect-video md:aspect-[4/3] relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
@@ -213,11 +213,11 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         </div>
                                     </div>
                                 )}
-                                <div className="flex-grow">
-                                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight sm:text-justify`}>
+                                <div className="min-w-0 flex-grow">
+                                    <h3 className={`wrap-anywhere ${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
                                         <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
                                     </h3>
-                                    <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
+                                    <p className={`wrap-anywhere ${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
                                         {pub.authors.map((author, idx) => (
                                             <span key={idx}>
                                                 <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
@@ -230,12 +230,12 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             </span>
                                         ))}
                                     </p>
-                                    <p className="text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
+                                    <p className="wrap-anywhere text-sm font-medium text-neutral-800 dark:text-neutral-600 mb-3">
                                         {pub.journal || pub.conference} {pub.year}
                                     </p>
 
                                     {pub.description && (
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3 sm:text-justify sm:hyphens-auto">
+                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3 prose-justify">
                                             {pub.description}
                                         </p>
                                     )}
@@ -300,7 +300,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 exit={{ opacity: 0, height: 0 }}
                                                 className="overflow-hidden mt-4"
                                             >
-                                                <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
+                                                <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 border border-neutral-200 dark:border-neutral-700">
                                                     {pub.abstractImage && (
                                                         <Image
                                                             src={`/papers/${pub.abstractImage}`}
@@ -311,7 +311,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                             sizes="(max-width: 768px) 100vw, 900px"
                                                         />
                                                     )}
-                                                    <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed sm:text-justify sm:hyphens-auto">
+                                                    <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed prose-justify">
                                                         {pub.abstract}
                                                     </p>
                                                 </div>
@@ -325,8 +325,8 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 exit={{ opacity: 0, height: 0 }}
                                                 className="overflow-hidden mt-4"
                                             >
-                                                <div className="relative bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
-                                                    <pre className="text-xs text-neutral-600 dark:text-neutral-500 overflow-x-auto whitespace-pre-wrap font-mono">
+                                                <div className="relative bg-neutral-50 dark:bg-neutral-800 rounded-lg p-3 sm:p-4 border border-neutral-200 dark:border-neutral-700">
+                                                    <pre className="min-w-0 max-w-full wrap-anywhere text-xs text-neutral-600 dark:text-neutral-500 overflow-x-auto whitespace-pre-wrap font-mono">
                                                         {pub.bibtex}
                                                     </pre>
                                                     <button

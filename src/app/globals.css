@@ -185,20 +185,23 @@ body {
   overflow-x: clip;
 }
 
-/* Justified prose on larger screens; natural left alignment on phones
-   (narrow columns would stretch word spacing too much) */
-.markdown p,
-.markdown li {
+@utility prose-justify {
+  text-align: justify;
+  text-align-last: left;
+  overflow-wrap: anywhere;
   text-wrap: pretty;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
-@media (min-width: 640px) {
-  .markdown p,
-  .markdown li {
-    text-align: justify;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-  }
+.markdown p,
+.markdown li {
+  @apply prose-justify;
+}
+
+.markdown a,
+.markdown code {
+  overflow-wrap: anywhere;
 }
 
 /* Typography utilities */

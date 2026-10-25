@@ -22,12 +22,12 @@ export default function SelectedPublications({ publications, title, enableOnePag
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
         >
-            <div className="flex items-center justify-between mb-4">
-                <h2 className="text-2xl font-serif font-bold text-primary">{resolvedTitle}</h2>
+            <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 mb-4">
+                <h2 className="min-w-0 text-2xl font-serif font-bold text-primary">{resolvedTitle}</h2>
                 <Link
                     href={enableOnePageMode ? "/#publications" : "/publications"}
                     prefetch={true}
-                    className="text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
+                    className="shrink-0 text-accent hover:text-accent-dark text-sm font-medium transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
                 >
                     {messages.home.viewAll} →
                 </Link>
@@ -41,10 +41,10 @@ export default function SelectedPublications({ publications, title, enableOnePag
                         transition={{ duration: 0.4, delay: 0.1 * index }}
                         className="bg-neutral-50 dark:bg-neutral-800 p-4 rounded-lg shadow-sm border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] hover:shadow-lg transition-all duration-200 hover:scale-[1.02]"
                     >
-                        <h3 className="font-semibold text-primary mb-2 leading-tight">
+                        <h3 className="wrap-anywhere font-semibold text-primary mb-2 leading-tight">
                             <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
                         </h3>
-                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-1">
+                        <p className="wrap-anywhere text-sm text-neutral-600 dark:text-neutral-500 mb-1">
                             {pub.authors.map((author, idx) => (
                                 <span key={idx}>
                                     <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
@@ -57,11 +57,11 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                 </span>
                             ))}
                         </p>
-                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-2">
+                        <p className="wrap-anywhere text-sm text-neutral-600 dark:text-neutral-500 mb-2">
                             {pub.journal || pub.conference}
                         </p>
                         {pub.description && (
-                            <p className="text-sm text-neutral-500 dark:text-neutral-500 line-clamp-2">
+                            <p className="prose-justify text-sm text-neutral-500 dark:text-neutral-500 line-clamp-2">
                                 {pub.description}
                             </p>
                         )}
