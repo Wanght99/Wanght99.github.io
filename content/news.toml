@@ -4,13 +4,13 @@ content = "My Google Scholar citations have reached 100. Thank you to all collea
 image = "/news/google-scholar-100-citations.jpg"
 
 [[news]]
+date = "2026-11"
+content = "Invited to present at the 5th Conference on Social Geocomputation and the Annual Conference of the Social Remote Sensing and Geocomputing Committee of the China Association of Remote Sensing Application"
+
+[[news]]
 date = "2026-10"
 content = "Our work has been accepted by Building and Environment 🎉"
 
 [[news]]
 date = "2026-08"
 content = "Our work has been accepted by Transport Policy 🎉"
-
-[[news]]
-date = "2026-07"
-content = "Accepted to present at the 33rd International Conference on Geoinformatic"
