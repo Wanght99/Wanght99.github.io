@@ -1,11 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useMessages } from '@/lib/i18n/useMessages';
 
 export interface NewsItem {
     date: string;
     content: string;
+    image?: string;
 }
 
 interface NewsProps {
@@ -28,7 +30,19 @@ export default function News({ items, title }: NewsProps) {
                 {items.map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
                         <span className="text-xs text-neutral-500 mt-1 w-16 flex-shrink-0">{item.date}</span>
-                        <p className="prose-justify min-w-0 flex-1 text-sm text-neutral-700">{item.content}</p>
+                        <div className="min-w-0 flex-1">
+                            <p className="prose-justify text-sm text-neutral-700">{item.content}</p>
+                            {item.image && (
+                                <Image
+                                    src={item.image}
+                                    alt={item.content}
+                                    width={1295}
+                                    height={1575}
+                                    className="mt-3 h-auto w-full max-w-md rounded-lg border border-neutral-200"
+                                    sizes="(max-width: 768px) 100vw, 448px"
+                                />
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>
