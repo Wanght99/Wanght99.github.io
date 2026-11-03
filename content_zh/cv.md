@@ -27,7 +27,7 @@
 
 ## 学术服务
 
-* **期刊审稿人**: Applied Spatial Analysis and Policy; BMC Psychology; Cell Reports Sustainability; Cities; Discover Applied Science; Discover Cities; Discover Education; Frontiers in Climate; Frontiers in Psychology; Frontiers in Public Health; Frontiers in Sustainable Food Systems; Humanities and Social Sciences Communications; Journal of Asian Architecture and Building Engineering; Journal of Cleaner Production; Journal of Environmental Management; Journal of Geovisualization and Spatial Analysis; Journal of Transport Geography; Peer-to-Peer Networking and Applications; Scientific Reports; SN Social Science; Transportation; Travel Behaviour and Society
+* **期刊审稿人**: Applied Spatial Analysis and Policy; BMC Psychology; Cell Reports Sustainability; Cities; Discover Applied Science; Discover Cities; Discover Education; Frontiers in Climate; Frontiers in Psychology; Frontiers in Public Health; Frontiers in Sustainable Food Systems; Humanities and Social Sciences Communications; Journal of Asian Architecture and Building Engineering; Journal of Cleaner Production; Journal of Environmental Management; Journal of Geovisualization and Spatial Analysis; Journal of Transport Geography; Peer-to-Peer Networking and Applications; Scientific Reports; SN Social Science; Transport Policy; Transportation; Travel Behaviour and Society
 * **专业会员**: 香港测量师学会；美国地理学家协会；国际华人地理信息科学协会
 
 ## 教学经历
