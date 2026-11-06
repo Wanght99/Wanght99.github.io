@@ -305,8 +305,8 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                         <Image
                                                             src={`/papers/${pub.abstractImage}`}
                                                             alt={`${pub.title} abstract figure`}
-                                                            width={1600}
-                                                            height={1000}
+                                                            width={1800}
+                                                            height={917}
                                                             className="mb-4 h-auto w-full rounded-lg"
                                                             sizes="(max-width: 768px) 100vw, 900px"
                                                         />
