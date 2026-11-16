@@ -4,6 +4,20 @@ title_zh = "学术会议"
 description = "交流经历与旅行足迹"
 
 [[items]]
+title = "第五届社会地理计算暨中国遥感应用协会社会遥感地理计算专业委员会学术年会"
+subtitle = "中国北京 · 2026.11"
+content = "口头报告"
+type = "conference"
+image = "conference/SocialGeocomputation.jpg"
+location = "中国北京"
+date = "2026年11月13–15日"
+organizer = "中国遥感应用协会社会遥感地理计算专业委员会；中国科学院空天信息创新研究院"
+coOrganizers = "遥感与数字地球全国重点实验室；北京联合大学应用文理学院"
+supporting = "中国遥感应用协会（指导）；北京联合大学北京学研究所；中国科学院地理科学与资源研究所；武汉大学遥感信息工程学院；武汉大学测绘遥感信息工程国家重点实验室；兰州交通大学测绘与地理信息学院；兰州理工大学计算机与人工智能学院；北京地理学会；国家对地观测科学数据中心；《遥感学报》；Journal of Geovisualization and Spatial Analysis；《地球信息科学学报》；《北京联合大学学报》；华为技术有限公司；北京神州新桥科技有限公司"
+presentation = "听觉与嗅觉投诉的对比分析：城市边缘区时空格局与多尺度建成环境驱动因素"
+link = "https://www.carsa.org.cn/site/content/1428.html"
+
+[[items]]
 title = "第33届国际地理信息科学大会"
 subtitle = "新加坡 · 2026.07"
 content = "口头报告"

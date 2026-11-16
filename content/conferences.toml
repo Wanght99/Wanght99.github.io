@@ -4,6 +4,20 @@ title_zh = "学术会议"
 description = "Some of my academic communication experiences and memories."
 
 [[items]]
+title = "5th Conference on Social Geocomputation and the Annual Conference of the Social Remote Sensing and Geocomputing Committee of the China Association of Remote Sensing Application"
+subtitle = "Beijing, China · 2026.11"
+content = "Oral Presentation"
+type = "conference"
+image = "conference/SocialGeocomputation.jpg"
+location = "Beijing, China"
+date = "13–15 November 2026"
+organizer = "Social Remote Sensing and Geocomputing Committee, China Association of Remote Sensing Application; Aerospace Information Research Institute, Chinese Academy of Sciences"
+coOrganizers = "State Key Laboratory of Remote Sensing and Digital Earth; College of Applied Arts and Science, Beijing Union University"
+supporting = "China Association of Remote Sensing Application (guiding); Institute of Beijing Studies, Beijing Union University; Institute of Geographic Sciences and Natural Resources Research, Chinese Academy of Sciences; School of Remote Sensing and Information Engineering, Wuhan University; State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University; Faculty of Geomatics, Lanzhou Jiaotong University; College of Computer and Artificial Intelligence, Lanzhou University of Technology; Beijing Geographical Society; National Earth Observation Science Data Center; Journal of Remote Sensing; Journal of Geovisualization and Spatial Analysis; Journal of Geo-information Science; Journal of Beijing Union University; Huawei Technologies Co., Ltd.; Beijing Shenzhou Xinqiao Technology Co., Ltd."
+presentation = "Comparative Analysis of Auditory and Olfactory Complaints: Spatiotemporal Patterns and Multi-Scale Built Environment Drivers in Urban Fringes"
+link = "https://www.carsa.org.cn/site/content/1428.html"
+
+[[items]]
 title = "33rd International Conference on Geoinformatics"
 subtitle = "Singapore · 2026.07"
 content = "Oral Presentation"
