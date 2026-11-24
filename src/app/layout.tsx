@@ -8,28 +8,57 @@ import { getConfig } from '@/lib/config';
 import { getRuntimeI18nConfig } from '@/lib/i18n/config';
 import type { SiteConfig } from '@/lib/config';
 
+const SITE_URL = 'https://wanght99.github.io';
+
 export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig();
   const runtimeI18n = getRuntimeI18nConfig(config.i18n);
   const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
+  const seoTitle = `${config.author.name} | PhD Student at The Hong Kong Polytechnic University (PolyU)`;
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: {
-      default: config.site.title,
-      template: `%s | ${config.site.title}`,
+      default: seoTitle,
+      template: `%s | ${config.author.name}`,
     },
     description: config.site.description,
-    keywords: [config.author.name, 'PhD', 'Research', config.author.institution],
+    keywords: [
+      config.author.name,
+      'Haotian Wang',
+      'PolyU',
+      'The Hong Kong Polytechnic University',
+      'PhD Student',
+      'Urban Informatics',
+      'GeoAI',
+      'Social Sensing',
+      config.author.institution,
+    ],
     authors: [{ name: config.author.name }],
     creator: config.author.name,
     publisher: config.author.name,
+    alternates: {
+      canonical: '/',
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
+    },
     icons: {
       icon: config.site.favicon,
     },
     openGraph: {
       type: 'website',
       locale: openGraphLocale,
-      title: config.site.title,
+      url: SITE_URL,
+      title: seoTitle,
       description: config.site.description,
       siteName: `${config.author.name}'s Academic Website`,
     },
@@ -128,6 +157,38 @@ export default function RootLayout({
     lastUpdatedByLocale,
   } = buildLocalizedConfigMaps(targetLocales);
 
+  const sameAs = [
+    config.social.google_scholar,
+    config.social.orcid,
+    config.social.researchgate,
+    config.social.github,
+    config.social.linkedin,
+  ].filter((link): link is string => Boolean(link));
+
+  const personJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: config.author.name,
+    alternateName: '王皓天',
+    url: `${SITE_URL}/`,
+    image: `${SITE_URL}${config.author.avatar}`,
+    jobTitle: config.author.title,
+    affiliation: {
+      '@type': 'Organization',
+      name: 'The Hong Kong Polytechnic University',
+      alternateName: 'PolyU',
+      url: 'https://www.polyu.edu.hk/',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Hung Hom, Kowloon',
+      addressRegion: 'Hong Kong',
+    },
+    email: config.social.email,
+    knowsAbout: ['Social Sensing', 'Human Behaviour', 'Urban Dynamics', 'GeoAI', 'Human-Centered Planning'],
+    sameAs,
+  };
+
   return (
     <html lang={runtimeI18n.defaultLocale} className="scroll-smooth" suppressHydrationWarning>
       <head>
@@ -165,6 +226,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: buildLocaleBootstrapScript(runtimeI18n),
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
       </head>
       <body className="font-sans antialiased">
