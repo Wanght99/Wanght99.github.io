@@ -27,11 +27,11 @@ Shandong Jianzhu University
 ## Service
 ### Journal Reviewer
 
-**SCIE / SSCI · JCR Q1**: Cities; Computers, Environment and Urban Systems; Journal of Cleaner Production; Journal of Environmental Management; Journal of Transport Geography; Transport Policy; Transportation; Travel Behaviour and Society; Humanities and Social Sciences Communications; Frontiers in Public Health
+**SCIE/SSCI · JCR Q1**: Cities; Computers, Environment and Urban Systems; Journal of Cleaner Production; Journal of Environmental Management; Journal of Transport Geography; Transport Policy; Transportation; Travel Behaviour and Society; Humanities and Social Sciences Communications; Frontiers in Public Health
 
-**SCIE / SSCI · JCR Q2**: Scientific Reports; Frontiers in Psychology; Frontiers in Sustainable Food Systems; Applied Spatial Analysis and Policy; BMC Psychology; Journal of Asian Architecture and Building Engineering
+**SCIE/SSCI · JCR Q2**: Scientific Reports; Frontiers in Psychology; Frontiers in Sustainable Food Systems; Applied Spatial Analysis and Policy; BMC Psychology; Journal of Asian Architecture and Building Engineering
 
-**SCIE / SSCI · JCR Q3**: Peer-to-Peer Networking and Applications
+**SCIE/SSCI · JCR Q3**: Peer-to-Peer Networking and Applications
 
 **ESCI (Emerging Sources Citation Index)**: Cell Reports Sustainability; City and Environment Interactions; Discover Applied Science; Discover Cities; Discover Education; Frontiers in Climate; Journal of Geovisualization and Spatial Analysis; SN Social Science
 - **Professional Membership**: Hong Kong Institute of Surveyors; American Association of Geographers; The International Association of Chinese Professionals in Geographic Information Science
