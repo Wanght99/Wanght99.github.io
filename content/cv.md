@@ -27,8 +27,9 @@ Shandong Jianzhu University
 ## Service
 - **Journal Reviewer**
   - **SCIE/SSCI · JCR Q1**: Applied Spatial Analysis and Policy; BMC Psychology; Cities; Computers, Environment and Urban Systems; Frontiers in Psychology; Frontiers in Public Health; Humanities and Social Sciences Communications; Journal of Cleaner Production; Journal of Environmental Management; Journal of Transport Geography; Scientific Reports; Transport Policy; Transportation; Travel Behaviour and Society
-  - **SCIE/SSCI · JCR Q2**: Frontiers in Sustainable Food Systems; Journal of Asian Architecture and Building Engineering
-  - **ESCI**: Cell Reports Sustainability; City and Environment Interactions; Discover Applied Sciences; Frontiers in Climate; Journal of Geovisualization and Spatial Analysis
+  - **SCIE/SSCI · JCR Q2**: Frontiers in Sustainable Food Systems; Journal of Asian Architecture and Building Engineering; Peer-to-Peer Networking and Applications
+  - **ESCI · JCR Q1**: Cell Reports Sustainability; City and Environment Interactions; Discover Applied Sciences; Journal of Geovisualization and Spatial Analysis
+  - **ESCI · JCR Q2**: Frontiers in Climate
   - **AHCI**: Frontiers of Architectural Research
 - **Professional Membership**: Hong Kong Institute of Surveyors; American Association of Geographers; The International Association of Chinese Professionals in Geographic Information Science
 - **Teaching Assistant**: The Hong Kong Polytechnic University - LSGI 532 Spatial Data Visualization and Modeling (Graduate Level); LSGI 653 Smart City and Urban Informatics (Doctoral Level)

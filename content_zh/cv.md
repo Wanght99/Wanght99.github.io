@@ -29,8 +29,9 @@
 
 * **期刊审稿人**
   * **SCIE/SSCI · JCR Q1**：Applied Spatial Analysis and Policy; BMC Psychology; Cities; Computers, Environment and Urban Systems; Frontiers in Psychology; Frontiers in Public Health; Humanities and Social Sciences Communications; Journal of Cleaner Production; Journal of Environmental Management; Journal of Transport Geography; Scientific Reports; Transport Policy; Transportation; Travel Behaviour and Society
-  * **SCIE/SSCI · JCR Q2**：Frontiers in Sustainable Food Systems; Journal of Asian Architecture and Building Engineering
-  * **ESCI**：Cell Reports Sustainability; City and Environment Interactions; Discover Applied Sciences; Frontiers in Climate; Journal of Geovisualization and Spatial Analysis
+  * **SCIE/SSCI · JCR Q2**：Frontiers in Sustainable Food Systems; Journal of Asian Architecture and Building Engineering; Peer-to-Peer Networking and Applications
+  * **ESCI · JCR Q1**：Cell Reports Sustainability; City and Environment Interactions; Discover Applied Sciences; Journal of Geovisualization and Spatial Analysis
+  * **ESCI · JCR Q2**：Frontiers in Climate
   * **AHCI**：Frontiers of Architectural Research
 * **专业会员**: 香港测量师学会；美国地理学家协会；国际华人地理信息科学协会
 
