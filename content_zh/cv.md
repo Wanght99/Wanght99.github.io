@@ -30,9 +30,7 @@
 * **期刊审稿人**
   * **SCIE/SSCI · JCR Q1**：Cities; Computers, Environment and Urban Systems; Journal of Cleaner Production; Journal of Environmental Management; Journal of Transport Geography; Transport Policy; Transportation; Travel Behaviour and Society; Humanities and Social Sciences Communications; Frontiers in Public Health
   * **SCIE/SSCI · JCR Q2**：Scientific Reports; Frontiers in Psychology; Frontiers in Sustainable Food Systems; Applied Spatial Analysis and Policy; BMC Psychology; Journal of Asian Architecture and Building Engineering
-  * **SCIE/SSCI · JCR Q3**：Peer-to-Peer Networking and Applications
   * **ESCI**：Cell Reports Sustainability; City and Environment Interactions; Discover Applied Sciences; Frontiers in Climate; Journal of Geovisualization and Spatial Analysis
-  * **其他收录（Scopus / DOAJ）**：Discover Cities; Discover Education; SN Social Sciences
 * **专业会员**: 香港测量师学会；美国地理学家协会；国际华人地理信息科学协会
 
 ## 教学经历
